@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contact Me</title>
+<link rel=stylesheet type="text/css" href="../css/contactmestylesheet.css">
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<script src="../jquery/jquery-3.4.0.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<div class="container form-group" >
+	<form name="htmlform" action="../pages/Success.html">
+		<table width="450px">
+			<tr>
+				<td valign="top"><label for="first_name">First Name <span
+						style="color: red">*</span>
+				</label></td>
+				<td valign="top"><input type="text" name="first_name"
+					maxlength="50" size="30" required="required"></td>
+			</tr>
+
+			<tr>
+				<td valign="top""><label for="last_name">Last Name <span
+						style="color: red">*</span>
+				</label></td>
+				<td valign="top"><input type="text" name="last_name"
+					maxlength="50" size="30" required="required"></td>
+			</tr>
+			<tr>
+				<td valign="top"><label for="email">Email Address <span
+						style="color: red">*</span>
+				</label></td>
+				<td valign="top"><input type="email" name="email" 
+					maxlength="80" size="30" required="required"
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+
+			</tr>
+			<tr>
+				<td valign="top"><label for="telephone">Telephone
+						Number <span style="color: red">*</span>
+				</label></td>
+				<td valign="top"><input type="tel" name="telephone"
+					required="required" maxlength="30" size="30"
+					pattern="\d{3}[\-]\d{3}[\-]\d{4}"></td>
+			</tr>
+			<tr>
+				<td valign="top"><label for="comments">Comments <span
+						style="color: red">*</span>
+				</label></td>
+				<td valign="top"><textarea name="comments" maxlength="600"
+						cols="25" rows="4" required="required"></textarea></td>
+
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center"><input type="submit"
+					value="Submit" class="btn btn-info"	></td>
+			</tr>
+			<tr>
+				<td><span style="color: red; text-align: right;">*</span>Mandatory
+					field</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+</body>
+</html>

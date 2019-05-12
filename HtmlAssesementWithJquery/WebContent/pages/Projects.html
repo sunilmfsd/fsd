@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Projects</title>
+
+	<link rel=stylesheet type="text/css" href="../css/projectsstylesheet.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<script src="../jquery/jquery-3.4.0.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/projects.js"></script>
+	<style>
+			span:hover{
+				cursor: pointer;
+			}
+		</style>	
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<h4>Projects Summanry</h4>
+			<form class="col-sm-6">
+				<div class="row"></div>
+					<div class="form-group">
+						<label for="projectname">Project Name</label>
+						<span style="color:red">*</span>
+						<input class="form-control" type="text" id="projectname">
+					</div>
+					<div class="form-group">
+						<label for="projectdescription">Project Description</label>
+						<span style="color:red">*</span>
+						<textarea class="form-control rounded-0"  rows="5" id="projectdescription"></textarea>
+					</div>
+					<div class="form-group">
+							<label for="technologiesused">Technologies Used</label>
+							<span style="color:red">*</span>
+							<textarea class="form-control rounded-0" id="technologiesused"></textarea>
+					</div>
+					<div class="form-group">
+							<button type="button" class="btn-light addRow">Add row</button>
+					</div>
+				</div>	
+			</form>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<br>
+				<div class="table-responsive">
+					<table id="projecttable" class="table table-bordered" style="width:100%;">
+						<thead>
+							<tr>
+								<th>Project</th>
+								<th>Project Description</th>
+								<th>Technologies used</th>
+								<th>Edit</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

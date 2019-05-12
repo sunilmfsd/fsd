@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Experience</title>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<script src="../jquery/jquery-3.4.0.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/experience.js"></script>
+<style>
+	span:hover{
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+
+	<div class="container">
+				
+			<div class="col-sm-10">
+				<h4>Experience Details</h4>
+				<form>
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<label for="employer">Employer</label>
+							<span style="color:red">*</span>
+							<input class="form-control" type="text" id ="employer" autocomplete="on" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<label for="endingtitle">Ending Job Title</label>
+							<span style="color:red">*</span>
+							<input class="form-control" type="text" id ="endingtitle" autocomplete="on" required="true">
+						</div>
+					</div>
+
+					<div class="row">
+							<div class="col-sm-6 form-group">
+									<label for="startdate">Start Date</label>
+									<span style="color:red">*</span>
+									<input class="form-control" type="date" id ="startdate" autocomplete="on">
+								</div>
+								<div class="col-sm-6 form-group">
+									<label for="enddate">End Date</label>
+									<span style="color:red">*</span>
+									<input class="form-control" type="date" id ="enddate" autocomplete="on">
+								</div>
+					</div>
+					<button type="button" class="btn-light add-row">Add row</button>
+				</form>
+			</div>
+	</div>
+
+	<div class="container">
+		<div class="row">		
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<br>
+				<div class="table-responsive">
+					<table id="etable" class="table table-bordered table-sm" style="width:100%">
+							<thead>
+								<tr>
+									<th>Employer</th>
+									<th>Ending Job Title</th>
+									<th>Start Date</th>
+									<th>End Date</th>
+									<th>Edit</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+					</table>
+				</div>
+	
+			</div>
+		</div>
+	
+	</div>
+	
+</body>
+</html>
+
